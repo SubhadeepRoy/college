@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="ngo.sapne.intents.sapne.FragmentJoinUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff19"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                app:cardBackgroundColor="#f8f9fa"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+
+                <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/activity_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context="com.example.intents.sapne.ngo.example.intents.sapne.MainActivity">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="13dp"
+                        android:text="TO:"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="Enter email id"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+
+                        android:textColorHint="#123456" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rgSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="400dp"
+                android:background="#ffff19"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                app:cardBackgroundColor="#f8f9fa"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/activity_main1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context="com.example.intents.sapne.ngo.example.intents.sapne.MainActivity">
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="Type a message"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="#123456" />
+
+                    <ImageButton
+                        android:id="@+id/button5"
+                        android:layout_width="57dp"
+                        android:layout_height="92dp"
+
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pin"
+
+                        android:text="Button" />
+
+                    <ImageButton
+                        android:id="@+id/button9"
+                        android:layout_width="600dp"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="280dp"
+                        android:src="@drawable/send"
+                        android:text="Button" />
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:id="@+id/terms"-->
+                    <!--/   android:textColor="@color/red"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:text="Terms and Conditions"-->
+                    <!--/>-->
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
